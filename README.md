@@ -1,64 +1,92 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Shoe Factory Management App
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+This is a Laravel-based App for a shoe factory management, creation and management of customers, sellers, sell zones, customer status & categories and more, where was developed the Back End with the APIs as the No- Framework Front End
 
-## About Laravel
+Developed By Francesco Tufano
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Tufano Full Moda assets and/or other resources are from the customer
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Caelum Dev Images and other resources are from my own entrepreneurship
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Deployed on the internet
 
-## Learning Laravel
+The app is up and running on the internet...You can access the app [here](https://tufanoapp.caelumdev.com/).
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+The App credentials are
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- email: test@mail.com
+- password: 4321
 
-## Laravel Sponsors
+## Features
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- Responsive Design
+- Login with DB connection and session establishment
+- Creation, edition and/or delete of the following:
+- Customers
+- Sellers
+- System users(after login into the system under customer request)
+- Geographical states
+- Selling zones associated to the geographical states and sellers
+- Categories and status for customers management
+- Print of each list previously mentioned
+- Encrypted passwords for users
 
-### Premium Partners
+## Runtimes & Engines
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+- MySQL 5.6.43
+- Laravel 8
+- PHP 7.3 - 8.0+
+- jQuery 3.5.1
+- Bootstrap 4
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Installation
 
-## Code of Conduct
+Clone or get the files from the GitHub repository [here](https://github.com/ftufano/TufanoFullModa).
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Install the dependencies and devDependencies and start the server. You will need to install Composer dependencies, you can do so on your CLI by typing...
 
-## Security Vulnerabilities
+```sh
+composer install
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+If you use 8.0 or above you , you can do so on your CLI by typing...
 
-## License
+```sh
+composer update
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Then look for the .env.example file which is on the root of the project, create a copy of it on the same root, then change the name to .env
+
+Then you will need to create the database, for that, go to the project CLI and type...
+
+```sh
+php artisan db:create laravel
+```
+
+Then you will need to run the migrations in order to create the tables and their structures, for that, get back to the CLI and type...
+
+```sh
+php artisan migrate
+```
+
+Then you will need seed the DB users table with the previous mentioned default user in order to have access on the app's login, for that, get back to the CLI and type...
+
+```sh
+php artisan db:seed
+```
+
+Then get back to the CLI and start the app server by typing...
+
+```sh
+php artisan serve
+```
+
+Then access to the project through localhost URL, if you reach it, will ask to generate the app key.
+
+And that's it, you're ready to go
+
+## Extras
+
+Added EER Diagram made on MySQL Workbench reffering to DB Diagram in path resources/extra_files/Tufano Full Moda App.mwb
+
