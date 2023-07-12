@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class UnassignedCategorySeeder extends Seeder
+class DefaultStatussesSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,15 +14,14 @@ class UnassignedCategorySeeder extends Seeder
      */
     public function run()
     {
-        
-        DB::table('categories')->insert([
-            ['name'=> 'Unnasigned',
+        DB::table('status')->insert([
+            ['name'=> 'Blocked',
             'users_id'=>1]
             ,
-            ['name'=> 'Sandals',
+            ['name'=> 'Defaulter',
             'users_id'=>1]
             ,
-            ['name'=> 'Heels',
+            ['name'=> 'Active',
             'users_id'=>1]
         ]);
 
