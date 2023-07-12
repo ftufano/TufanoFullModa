@@ -10,7 +10,7 @@ Caelum Dev Images and other resources are from my own entrepreneurship
 
 ## Deployed on the internet
 
-The app is up and running on the internet...You can access the app [here](https://tufanoapp.caelumdev.com/).
+The app is up and running on the internet...You can access the app [here](https://tufano.caelumdev.com/).
 
 The App credentials are
 
