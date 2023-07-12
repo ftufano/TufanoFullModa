@@ -1,0 +1,130 @@
+/*
+|--------------------------------------------------------------------------
+| Custom Tufano... Full Moda CSS
+|--------------------------------------------------------------------------
+|
+| These file is used to create custom CSS style to fit on the desired design
+| 
+| 
+| Author: Caelum Dev
+*/
+
+/*Tufano Default font*/
+@font-face {
+    src: url(../font/brush455-bt-regular.ttf);
+    font-family: 'brush455-bt-regular';
+ }
+
+/*Set Report button inline-block*/
+@media (max-width: 575px) {  
+    .cm-col-a-display{
+        display: inline-block !important;
+        margin-top: 12px !important;        
+    }
+}
+
+/*Set Username visible always*/
+@media (max-width: 991px) {  
+    .cm-span-a-display{
+        display: inline !important;      
+    }
+}
+
+/*Set Citizen type radio button inline and right padding*/
+.cm-radio-display{
+    display: inline-block !important;
+    padding-right: 1.25rem !important;
+}
+
+/*Set Filling Taxes label as block and having more margin bottom up to 767px and from 768px and beyond*/
+@media (max-width: 767px) {
+    .cm-lbl-dsp{
+        display: block !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .cm-lbl-dsp-mrg{
+        display: block !important;
+        margin-bottom: 1rem !important;
+    }
+}
+
+/*Set Data Table Action Icon Buttons Inline Margin*/
+.cm-a-mrg{
+    margin-inline: 0.35em;
+}
+
+/*Set Data Table Action Icon Hidden Form Flex Display*/
+.cm-form-dsp{
+    display: flex;
+}
+
+/*Fade ID user column on DataTable*/
+.cm-tbl-dsp{
+    display: none;
+}
+
+/*Center Tufano... Full Moda Login Logo*/
+.cm-img-h-w{
+    height: 200px;
+    width: 200px;
+}
+
+/*Login h4 text font style*/
+.cm-h4-text{
+    font-family: 'brush455-bt-regular';
+    font-size: 2.7rem;
+}
+
+/*Caelum Dev Link Style*/
+.cm-a-clr{
+    color: #000000;
+    -webkit-transition: color .15s ease-out;
+    -moz-transition: color 15s ease-out;
+    -o-transition: color .15s ease-out;
+    transition: color .15s ease-out;
+}
+
+.cm-a-clr:hover{
+    color: #e5b0ea;
+    text-decoration: none;
+}
+
+/*Full Calendar Custom Style*/
+.calendar {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.fc-toolbar {
+    text-transform: capitalize;
+}
+
+.fc-toolbar-chunk {
+    margin-bottom: 1em;
+}
+
+/*Bootstrap column style*/
+.cm-col {
+    padding: 1rem;
+    border: 1px solid rgba(86,61,124,.2);
+}
+
+/*Phone div force display to grid*/
+.cm-dsp-grd{
+    display: grid;
+}
+
+/*Low and center image on edit item form*/
+.cm-img-dsp-mrg{
+    display: block;
+    margin: auto;
+}
+
+/*Hide file input on edit item form*/
+.cm-npt-dsp{
+    display: none;
+}
